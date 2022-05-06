@@ -11,3 +11,54 @@ html{
     font-family: "Poppins";
 }
 
+body{
+    background-color: #242143;
+}
+
+.header{
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    color: #fff;
+    background-color: #322F4C;
+}
+
+.header > h3 {
+    font-size: 2rem;
+}
+
+.header p {
+    font-size: 1.4rem;
+}
+
+.main{
+    color: #fff;
+    padding: 20px;
+}
+
+.main > h4{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='password']{
+    padding: 14px 8px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 0px;
+}
+
+label{
+    font-size: 1.4rem;
+    margin: 10px 0px;
+}
+
