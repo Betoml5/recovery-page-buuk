@@ -16,15 +16,22 @@ body{
 }
 
 .header{
+    width: 100%;
+    background-color: #322F4C;
+
+}
+
+ .header__container{
 
     display: flex; 
     justify-content: space-between;
     align-items: center;
 
+    max-width: 720px;
     padding: 20px;
+    margin: 0 auto;
 
     color: #fff;
-    background-color: #322F4C;
 }
 
 .header > h3 {
@@ -33,16 +40,21 @@ body{
 
 .header p {
     font-size: 1.4rem;
+   
 }
 
 .main{
     color: #fff;
     padding: 20px;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 .main > h4{
     font-weight: 600;
     font-size: 2rem;
+
+    
 }
 
 form{
