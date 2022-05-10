@@ -34,11 +34,11 @@ body{
     color: #fff;
 }
 
-.header > h3 {
+.header__container > h3 {
     font-size: 2rem;
 }
 
-.header p {
+.header__container p {  
     font-size: 1.4rem;
    
 }
@@ -62,11 +62,35 @@ form{
     flex-direction: column;
 }
 
+
+
 input[type='password']{
     padding: 14px 8px;
     border: none;
     border-radius: 6px;
     margin: 10px 0px;
+}
+
+input[type='password']::placeholder{
+    font-size: 1.4rem;
+}
+
+input[type='submit']{
+    padding: 20px 10px;
+    background-color: #322F4C;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    opacity: 0.9;
+    
 }
 
 label{
