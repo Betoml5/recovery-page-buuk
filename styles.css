@@ -102,5 +102,12 @@ label{
 #errormsg{
     font-size: 1.6rem;
     color: red  ;
+    font-weight: 500;
+}
+
+#successmsg {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #48bb78;
 }
 

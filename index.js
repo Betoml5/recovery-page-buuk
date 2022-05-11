@@ -6,15 +6,35 @@ async function changePassword() {
     const password = document.querySelector("#password");
     const confirmPassword = document.querySelector("#confirmpassword")
     const errorMsg = document.querySelector("#errormsg")
-    if (password === "" || confirmPassword === "") {
-        errorMsg = "Este campo es obligatorio"
-    } else if (password !== confirmPassword) {
-        errorMsg = "Las contraseñas no coinciden"
+    const successMsg = document.querySelector("#successmsg")
+    let hasError = false;
+    errorMsg.innerHTML = "";
+
+    if (password.value === "" || confirmPassword.value === "") {
+        errorMsg.innerHTML += "<p>Hay algunos campos sin completar</p>";
+        hasError = true;
+
+
+
+    }
+
+    if (password !== confirmPassword) {
+        errorMsg.innerHTML += `<p>Las contraseñas no coinciden </p>`;
+        hasError = true;
+    }
+
+    if (!hasError) {
+        successMsg.innerHTML = "<p>Contraseña actualizada correctamente</p>"
+        password.value = "";
+        confirmPassword.value = "";
+
     }
 
     // const response = await fetch(`${API_URL}/forgot-password`);
     // const data = await response.json();
-    // console.log(data)
+    // if (data) {
+
+    // }
 
 }
 
@@ -22,6 +42,5 @@ btn.addEventListener("click", (e) => {
 
 
     e.preventDefault()
-    // errorMsg.textContent = "Error"
     changePassword()
 })
