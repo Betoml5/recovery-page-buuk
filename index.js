@@ -8,6 +8,7 @@ async function changePassword() {
   const successMsg = document.querySelector("#successmsg");
   let hasError = false;
   errorMsg.innerHTML = "";
+  successMsg.innerHTML = "";
 
   if (password.value === "" || confirmPassword.value === "") {
     errorMsg.innerHTML += "<p>Hay algunos campos sin completar</p>";
@@ -34,8 +35,6 @@ async function changePassword() {
       errorMsg.innerHTML = "<p>Ocurrio un error inesperado en el servidor</p>";
     }
   }
-  password.value = "";
-  confirmPassword.value = "";
 
   // const response = await fetch(`${API_URL}/forgot-password`);
   // const data = await response.json();

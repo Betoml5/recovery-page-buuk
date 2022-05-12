@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Recuperar Contraseña</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles.css" />
-  <title>Recuperar Contraseña</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <h3>Buuk</h3>
+        <p>Recuperar Contraseña</p>
+      </div>
+    </header>
 
-<body>
-  <header class="header">
-    <div class="header__container">
-      <h3>Buuk</h3>
-      <p>Recuperar Contraseña</p>
-    </div>
-  </header>
-
-  <main class="main">
-    <h4>Recupera tu Contraseña</h4>
-    <form>
-      <label for="passsword">Contraseña</label>
-      <input type="password" placeholder="Contraseña" id="password" name="password" />
-      <label for="confirmpassword">Confirmar Contraseña </label>
-      <input type="password" placeholder="Confirmar Contraseña" id="confirmpassword" name="confirmpassword" />
-      <div id="errormsg"></div>
-      <div id="successmsg"></div>
-      <input type="submit" value="Aceptar" id="btn">
-    </form>
-  </main>
-  <script src="./index.js"></script>
-</body>
-
+    <main class="main">
+      <h4>Recupera tu Contraseña</h4>
+      <form>
+        <label for="passsword">Contraseña</label>
+        <input
+          type="password"
+          placeholder="Contraseña"
+          id="password"
+          name="password"
+        />
+        <label for="confirmpassword">Confirmar Contraseña </label>
+        <input
+          type="password"
+          placeholder="Confirmar Contraseña"
+          id="confirmpassword"
+          name="confirmpassword"
+        />
+        <div id="errormsg"></div>
+        <div id="successmsg"></div>
+        <div id="loading"></div>
+        <input type="submit" value="Aceptar" id="btn" />
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
