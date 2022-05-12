@@ -1,113 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-    font-family: "Poppins";
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
 }
 
-body{
-    background-color: #242143;
+body {
+  background-color: #242143;
 }
 
-.header{
-    width: 100%;
-    background-color: #322F4C;
-
+.header {
+  width: 100%;
+  background-color: #322f4c;
 }
 
- .header__container{
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
+  max-width: 720px;
+  padding: 20px;
+  margin: 0 auto;
 
-    max-width: 720px;
-    padding: 20px;
-    margin: 0 auto;
-
-    color: #fff;
+  color: #fff;
 }
 
 .header__container > h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-.header__container p {  
-    font-size: 1.4rem;
-   
+.header__container p {
+  font-size: 1.4rem;
 }
 
-.main{
-    color: #fff;
-    padding: 20px;
-    max-width: 720px;
-    margin: 0 auto;
+.main {
+  color: #fff;
+  padding: 20px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-.main > h4{
-    font-weight: 600;
-    font-size: 2rem;
-
-    
+.main > h4 {
+  font-weight: 600;
+  font-size: 2rem;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-input[type='password']{
-    padding: 14px 8px;
-    border: none;
-    border-radius: 6px;
-    margin: 10px 0px;
+input[type="password"] {
+  padding: 14px 8px;
+  border: none;
+  border-radius: 6px;
+  margin: 10px 0px;
 }
 
-input[type='password']::placeholder{
-    font-size: 1.4rem;
+input[type="password"]::placeholder {
+  font-size: 1.4rem;
 }
 
-input[type='submit']{
-    padding: 20px 10px;
-    background-color: #322F4C;
-    border: none;
-    color: #fff;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 10px;
+input[type="submit"] {
+  padding: 20px 10px;
+  background-color: #322f4c;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-input[type='submit']:hover{
-    opacity: 0.9;
-    
+input[type="submit"]:hover {
+  opacity: 0.9;
 }
 
-label{
-    font-size: 1.4rem;
-    margin: 10px 0px;
+label {
+  font-size: 1.4rem;
+  margin: 10px 0px;
 }
 
-#errormsg{
-    font-size: 1.6rem;
-    color: red  ;
-    font-weight: 500;
+#errormsg {
+  font-size: 1.6rem;
+  color: red;
+  font-weight: 500;
 }
 
 #successmsg {
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: #48bb78;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #48bb78;
 }
-
