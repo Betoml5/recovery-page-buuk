@@ -41,9 +41,10 @@ async function changePassword() {
     }
   }
 
-  // const response = await fetch(`${API_URL}/forgot-password`);
-  // const data = await response.json();
-  // if (data) {
+  const response = await fetch(`${API_URL}/auth/forgot-password`);
+  const data = await response.json();
+  if (data) {
+  }
 
   // }
 }
