@@ -27,23 +27,29 @@ async function changePassword() {
 
   if (hasError === false) {
     try {
-      const response = await fetch(`${API_URL}/user/update`, {
-        method: "POST",
-      });
+      console.log(password.value);
+      const response = await fetch(
+        `${API_URL}/auth/change-password?token=${token}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            password: password.value,
+          }),
+        }
+      );
+
       const data = await response.json();
 
-      console.log(data);
       successMsg.innerHTML = "<p>Contraseña actualizada correctamente</p>";
       password.value = "";
       confirmPassword.value = "";
     } catch (error) {
+      console.log(error);
       errorMsg.innerHTML = "<p>Ocurrio un error inesperado en el servidor</p>";
     }
-  }
-
-  const response = await fetch(`${API_URL}/auth/forgot-password`);
-  const data = await response.json();
-  if (data) {
   }
 
   // }
