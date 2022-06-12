@@ -1,5 +1,5 @@
 const btn = document.querySelector("#btn");
-const API_URL = "http://localhost:3080/api/v1";
+const API_URL = "https://buukapi.herokuapp.com/api/v1";
 
 var url_string = window.location.href; //window.location.href
 var url = new URL(url_string);
